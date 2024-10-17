@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Entrega 01</title>
+    <script defer src="../JS/jquery-3.7.1.min.js"></script>
+    <script defer src="../JS/script.js"></script>
+    <link href="../CSS/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--Se intento simular la compra de entradas para un cine. 
+    Dando las opciones de pelicula,
+    solicitando la cantidad de entradas, 
+    y devolviendo el costo toltal de las entradas.-->
+    <div id="elegirpelicula">
+        <h1>¿Que peli quieres ver?</h1>
+        <div class="pelis">
+            <div class="item">
+                <img src="../images/ET.jpg"/>
+                <h3>E.T.: El extraterrestre</h3>
+                <p> Elliott es un niño de nueve años que se encuentra 
+                    con un extraterrestre y decide esconderlo en su 
+                    casa para protegerlo. Contará con la ayuda de su 
+                    pequeña hermana y su hermano mayor para mantener el 
+                    secreto y juntos vivirán una aventura inolvidable.
+                </p>
+                <button class="botonComprar" id='botonComprar1'>Comprar</button>
+            </div>
+            <div class="item">
+                <img src="../images/indiana-jones.jpg"/>
+                <h3>Indiana Jones y los cazadores del arca perdida</h3>
+                <p> El arqueólogo Indiana Jones necesita encontrar
+                    el Arca de la Alianza, una reliquia bíblica que 
+                    contiene los Diez Mandamientos y que convierte 
+                    en invencible a su poseedor. Jones deberá 
+                    adelantarse a los nazis, quienes también buscan el Arca.
+                </p>
+                <button class="botonComprar" id='botonComprar2'>Comprar</button>
+            </div>
+            <div class="item">
+                <img src="../images/volveralfuturo.jpg"/>
+                <h3>Volver al Futuro I</h3>
+                <p> Una máquina del tiempo transporta a un
+                    adolescente a los años 50, cuando sus 
+                    padres todavía estudiaban en la secundaria.
+                </p>
+                <button class="botonComprar" id='botonComprar3'>Comprar</button>
+            </div>
+            <div class="item">
+                <img src="../images/jaws.jpg"/>
+                <h3>Tiburón</h3>
+                <p> Un gigantesco tiburón blanco amenaza a los 
+                    habitantes y turistas de un pueblo costero. 
+                    El alcalde encomienda la caza del escualo al 
+                    jefe de la policía, un pescador y un científico. 
+                    El grupo se da cuenta de que es un animal inteligente y violento.
+                </p>
+                <button class="botonComprar" id='botonComprar4'>Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div id="diahorario">
+        <h2>Elige el día y horario:</h2>
+        <select name="Día" id="dia">
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sabado">Sabado</option>
+            <option value="Domingo">Domingo</option>
+        </select>
+        <select name="Horario" id="horario">
+            <option value="20.00">20.00</option>
+            <option value="22.00">22.00</option>
+        </select>
+        <button class="botonComprar" id="confirmarhorario">Confirmar</button>
+    </div>
+    <div id="CantidadEntradas">
+        <h2>Ingrese la cantidad de entradas:</h2>
+        <input id='cantidaddeentradas'></input>
+        <button id='confirmarcantidad'>Ok</button>
+    </div>
+    
+    <div id="Total">
+        <p id="MensajeFinal">Reservaste X entradas para +'pelis'+ el día X en x horario. El total es X.</p>
+        <h2>¡Disfruta la funcion!</h2>
+    </div>
+</body>
+</html>
